@@ -57,7 +57,7 @@
 												<ul>
 													<li>Python.</li>
 													<li>SQL para extração de dados.</li>
-													<li> Banco de Dados SQLite, Postres, MySQL.</li>
+													<li> Banco de Dados, SQLite, Postres, MySQL.</li>
 												</ul>
 											</div>
 										</article>
@@ -132,7 +132,7 @@
 										</article>
 										
 										<article>
-											<a href="https://app.powerbi.com/view?r=eyJrIjoiNzI2OTg2YjYtYTc0Ny00ZTY2LWFhNTItMjcwYTdmMmZjZjFmIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9&pageName=ReportSection70f6b5431bbb599cf246"class="image"><img src="images/rh.jpeg" alt="" /></a>
+											<a href="https://app.powerbi.com/view?r=eyJrIjoiNzI2OTg2YjYtYTc0Ny00ZTY2LWFhNTItMjcwYTdmMmZjZjFmIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"class="image"><img src="images/rh.jpeg" alt="" /></a>
 											<h3>Gestão Inteligente de Recursos Humanos</h3>
 											<p>O Gestão Inteligente de Recursos Humanos é um dashboard avançado projetado para proporcionar uma visão abrangente e detalhada da força de trabalho de uma organização. Este projeto visa otimizar a gestão de recursos humanos através da coleta, análise e visualização de dados críticos, permitindo decisões mais informadas e estratégias mais eficazes.</p>
 											<h4>Ferramentas Utilizadas</h4>
@@ -146,16 +146,64 @@
 												<li><a href="" class="button">Saiba Mais</a></li>
 											</ul>
 											<-->
-											<!---
+											
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/rh.jpg" alt="" /></a>
-											<h3>Projeto 3</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<a href="https://app.powerbi.com/view?r=eyJrIjoiZWNhMzVjNTEtYjY0NC00M2Y4LTlkNzUtY2YzYWRiN2YxMzIyIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9&pageName=13238d3b8555b509a9e3" class="image"><img src="images/finance.jpg" alt="" /></a>
+											<h3>Dashboard de Análise Financeira</h3>
+											<p>Neste projeto, desenvolvi um dashboard de análise financeira que integra dados de balanço patrimonial e demonstração de resultados (DRE). O objetivo principal é fornecer uma visão abrangente e clara da saúde financeira da empresa, permitindo uma análise detalhada das receitas, despesas e saldo de contas ao longo do tempo.</p>
+											<ul>
+												<li>Banco de dados MySQL alocado na GCP.</li>
+												<li>Power BI Desktop.</li>
+												<li>Power Query.</li>
+												<li>Python: Utilizado para a manipulação e análise de dados.</li>
+												<li>Google Colab: Ambiente para desenvolvimento e execução de código Python.</li>
+
+											</ul>
 											<ul class="actions">
 												<li><a href="#" class="button">Saiba Mais</a></li>
 											</ul>
+											<div id="moreInfo" style="display: none; margin-top: 20px;">
+												<h4>Processo de ETL</h4>
+												<p><strong>Extração:</strong> Conexão com o banco de dados MySQL no Google Cloud Platform para extrair os dados financeiros necessários.</p>
+												<p><strong>Transformação:</strong></p>
+												<ul>
+													<li>Limpeza e formatação dos dados financeiros.</li>
+													<li>Integração de dados de balanço patrimonial (incluindo contas a receber, estoques e fornecedores) com a demonstração de resultados (incluindo receitas e despesas).</li>
+													<li>Criação de métricas financeiras adicionais para análise mais detalhada.</li>
+												</ul>
+												<p><strong>Carga:</strong> Carregamento dos dados transformados no Power BI para criação do dashboard.</p>
+										
+												<h4>Funcionalidades do Dashboard</h4>
+												<ul>
+													<li><strong>Análise de Balanço Patrimonial:</strong> Visualização do saldo de contas, contas a receber, estoques e fornecedores.</li>
+													<li><strong>Demonstração de Resultados:</strong> Exibição detalhada das receitas e despesas.</li>
+													<li><strong>Indicadores Financeiros:</strong> Cálculo e visualização de indicadores chave, como margem de lucro e despesas operacionais.</li>
+													<li><strong>Tendências Temporais:</strong> Análise de como os principais indicadores financeiros mudam ao longo do tempo.</li>
+												</ul>
+										
+												<h4>Insights Oferecidos</h4>
+												<ul>
+													<li><strong>Visão Geral da Saúde Financeira:</strong> O dashboard fornece uma visão clara e consolidada da saúde financeira da empresa, ajudando na tomada de decisões estratégicas.</li>
+													<li><strong>Identificação de Tendências:</strong> Permite identificar tendências nos dados financeiros, como variações sazonais ou problemas emergentes em contas a receber e despesas.</li>
+													<li><strong>Análise de Desempenho:</strong> Facilita a análise do desempenho financeiro da empresa, ajudando a detectar áreas que necessitam de atenção ou ajustes estratégicos.</li>
+													<li><strong>Facilidade de Monitoramento:</strong> A interface interativa permite monitorar facilmente os principais indicadores e fazer comparações entre diferentes períodos.</li>
+												</ul>
+											</div>
 										</article>
+										<script>
+											// Adicionando o evento de clique ao botão "Saiba Mais"
+											document.getElementById('saibaMaisBtn').addEventListener('click', function(event) {
+												event.preventDefault(); // Previne o comportamento padrão do link
+												var moreInfo = document.getElementById('moreInfo');
+												if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+													moreInfo.style.display = 'block'; // Exibe o texto
+												} else {
+													moreInfo.style.display = 'none'; // Oculta o texto se já estiver visível
+												}
+											});
+										</script>
+										<!----
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3>Projeto 4</h3>
