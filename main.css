@@ -1,28 +1,33 @@
-/* Reset basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333; /* Texto escuro para contraste */
-    background-color: #ffffff; /* Fundo branco */
-}
-
 /* Navbar styles */
 #navbar {
     position: fixed; /* Fixa o menu no topo */
     top: 0;
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.9); /* Fundo escuro */
+    background: linear-gradient(135deg, rgba(51, 51, 51, 0.9), rgba(30, 30, 30, 0.9)); /* Fundo gradiente */
     z-index: 1000; /* Garante que fique sobre o conteúdo */
-    padding: 10px 0; /* Adiciona preenchimento */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    padding: 15px 0; /* Aumenta o preenchimento */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+}
+body {
+    margin-top: 0; /* Ajuste para a altura do navbar */
+}
+/* Estilo do cabeçalho */
+#header {
+    background: #fff; /* Cor de fundo do cabeçalho */
+    padding: 20px 0; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o cabeçalho */
+    margin-top: 70px;
 }
 
+/* Estilo das seções */
+section {
+    padding: 100px 20px; /* Ajuste para a altura do menu */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Linha fina no topo de cada seção */
+    margin: 20px 0; /* Margem entre seções */
+    background-color: #ffffff; /* Fundo das seções */
+    border-radius: 10px; /* Cantos arredondados */
+}
 #navbar ul {
     list-style-type: none; /* Remove marcadores de lista */
     margin: 0;
@@ -36,22 +41,28 @@ body {
     margin-right: 30px; /* Espaçamento entre itens */
 }
 
+#navbar ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+}
+
 #navbar ul li a {
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #ff4c4c; /* Cor vibrante: vermelho claro */
     padding: 14px 20px; /* Espaçamento interno dos links */
     display: inline-block; /* Permite o preenchimento */
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Transição suave ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
     cursor: pointer; /* Muda o cursor ao passar sobre os links */
     position: relative; /* Para efeitos de pseudo-elemento */
     font-size: 18px; /* Aumenta o tamanho da fonte */
     letter-spacing: 1px; /* Espaçamento entre letras */
+    border-radius: 5px; /* Bordas levemente arredondadas */
 }
 
 /* Efeito de hover nos links da navbar */
 #navbar ul li a:hover {
     color: #ff7d7d; /* Cor de destaque ao passar o mouse: vermelho mais claro */
     transform: translateY(-2px); /* Leve movimento para cima */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
 }
 
 /* Adiciona uma linha embaixo dos itens de menu de forma animada */
