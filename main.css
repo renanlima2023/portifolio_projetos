@@ -5,29 +5,14 @@
     width: 100%;
     background: linear-gradient(135deg, rgba(51, 51, 51, 0.9), rgba(30, 30, 30, 0.9)); /* Fundo gradiente */
     z-index: 1000; /* Garante que fique sobre o conteúdo */
-    padding: 15px 0; /* Aumenta o preenchimento */
+    padding: 10px 0; /* Aumenta o preenchimento */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
 }
 body {
-    margin-top: 0; /* Ajuste para a altura do navbar */
-}
-/* Estilo do cabeçalho */
-#header {
-    background: #fff; /* Cor de fundo do cabeçalho */
-    padding: 20px 0; /* Espaçamento interno do cabeçalho */
-    text-align: center; /* Centraliza o texto do cabeçalho */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o cabeçalho */
-    margin-top: 70px;
+    margin-top: 10px; /* Ajuste para a altura do navbar */
 }
 
-/* Estilo das seções */
-section {
-    padding: 100px 20px; /* Ajuste para a altura do menu */
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Linha fina no topo de cada seção */
-    margin: 20px 0; /* Margem entre seções */
-    background-color: #ffffff; /* Fundo das seções */
-    border-radius: 10px; /* Cantos arredondados */
-}
+
 #navbar ul {
     list-style-type: none; /* Remove marcadores de lista */
     margin: 0;
