@@ -141,6 +141,41 @@ img {
         max-width: 90%; /* Limita a largura da imagem em dispositivos menores */
     }
 }
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    #navbar ul li {
+        display: block; /* Torna os itens do menu verticais */
+        margin: 10px 0; /* Adiciona espaçamento entre os itens */
+    }
+
+    /* Ajustes adicionais para imagens em dispositivos menores */
+    img {
+        max-width: 90%; /* Limita a largura da imagem em dispositivos menores */
+    }
+}
+
+/* Novo bloco para ajuste do banner */
+@media (max-width: 768px) {
+    /* Adicionando margem ao banner para evitar que o menu cubra a imagem */
+    #banner {
+        margin-top: 80px; /* Ajuste conforme necessário, dependendo da altura do menu */
+    }
+
+    /* Caso o menu esteja fixo no topo */
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    /* Ajuste da imagem para se adaptar bem em telas menores */
+    .section-a .image img {
+        max-width: 100%; /* A imagem vai ocupar 100% da largura disponível */
+        height: auto; /* A altura se ajusta proporcionalmente */
+    }
+}
+
 /* Estilo para padronizar o tamanho das imagens dos projetos */
 .projeto-img {
     width: 500px; /* Defina a largura fixa */
