@@ -141,3 +141,17 @@ img {
         max-width: 90%; /* Limita a largura da imagem em dispositivos menores */
     }
 }
+/* Estilo para padronizar o tamanho das imagens dos projetos */
+.projeto-img {
+    width: 500px; /* Defina a largura fixa */
+    height: 500px; /* Defina a altura fixa */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço, sem distorcer */
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Efeito hover ao passar o mouse sobre a imagem */
+.projeto-img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem no hover */
+}
