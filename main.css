@@ -136,9 +136,8 @@ img {
 
 /* Estilo para padronizar o tamanho das imagens dos projetos */
 .projeto-img {
-    width: 100%; /* Largura responsiva */
-    max-width: 500px; /* Limite máximo */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 500px; /* Largura fixz */
+    height: 500px; /* Altura fixa*/
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
