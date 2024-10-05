@@ -8,11 +8,13 @@
     padding: 10px 0; /* Aumenta o preenchimento */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
 }
+
+/* Ajuste do corpo para evitar sobreposição do menu */
 body {
-    margin-top: 10px; /* Ajuste para a altura do navbar */
+    margin-top: 80px; /* Ajuste para a altura do navbar */
 }
 
-
+/* Lista de navegação */
 #navbar ul {
     list-style-type: none; /* Remove marcadores de lista */
     margin: 0;
@@ -129,53 +131,6 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    #navbar ul li {
-        display: block; /* Torna os itens do menu verticais */
-        margin: 10px 0; /* Adiciona espaçamento entre os itens */
-    }
-
-    /* Ajustes adicionais para imagens em dispositivos menores */
-    img {
-        max-width: 90%; /* Limita a largura da imagem em dispositivos menores */
-    }
-}
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    #navbar ul li {
-        display: block; /* Torna os itens do menu verticais */
-        margin: 10px 0; /* Adiciona espaçamento entre os itens */
-    }
-
-    /* Ajustes adicionais para imagens em dispositivos menores */
-    img {
-        max-width: 90%; /* Limita a largura da imagem em dispositivos menores */
-    }
-}
-
-/* Novo bloco para ajuste do banner */
-@media (max-width: 768px) {
-    /* Adicionando margem ao banner para evitar que o menu cubra a imagem */
-    #banner {
-        margin-top: 80px; /* Ajuste conforme necessário, dependendo da altura do menu */
-    }
-
-    /* Caso o menu esteja fixo no topo */
-    #navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-
-    /* Ajuste da imagem para se adaptar bem em telas menores */
-    .section-a .image img {
-        max-width: 100%; /* A imagem vai ocupar 100% da largura disponível */
-        height: auto; /* A altura se ajusta proporcionalmente */
-    }
-}
-
 /* Estilo para padronizar o tamanho das imagens dos projetos */
 .projeto-img {
     width: 500px; /* Defina a largura fixa */
@@ -189,4 +144,34 @@ img {
 /* Efeito hover ao passar o mouse sobre a imagem */
 .projeto-img:hover {
     transform: scale(1.05); /* Aumenta ligeiramente a imagem no hover */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    /* Ajuste da margem superior para evitar sobreposição */
+    body {
+        margin-top: 120px; /* Ajusta a margem superior quando o menu é fixo em dispositivos móveis */
+    }
+
+    /* Ajuste do banner para dispositivos móveis */
+    #banner {
+        margin-top: 80px; /* Garante que o banner apareça abaixo do menu */
+    }
+
+    /* Ajuste da imagem no banner */
+    .section-a .image img {
+        max-width: 100%; /* Garante que a imagem do banner se ajuste corretamente em dispositivos móveis */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    /* Ajuste dos itens do menu em dispositivos móveis */
+    #navbar ul li {
+        display: block; /* Exibe os itens do menu em coluna */
+        margin: 10px 0;
+    }
+
+    /* Ajustes adicionais para imagens em dispositivos menores */
+    img {
+        max-width: 90%; /* Limita a largura da imagem em dispositivos menores */
+    }
 }
