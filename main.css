@@ -1,180 +1,326 @@
-/* Navbar styles */
+/* Corpo e fonte */
+body {
+    font-family: 'Poppins', sans-serif; /* Defina uma fonte agradável */
+    background-color: #1c1e2a; /* Cor de fundo suave */
+    color: #ffffff; /* Texto branco para legibilidade */
+}
+
+/* Header */
+header {
+    background-color: #1c1e2a; /* Cor do fundo do cabeçalho */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha o conteúdo entre os lados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+    transition: background-color 0.3s ease; /* Efeito de transição para mudança de cor */
+}
+
+/* Título */
+header h1 {
+    color: #ffffff; /* Cor do texto */
+    font-size: 2rem; /* Tamanho do texto */
+    transition: color 0.3s ease; /* Efeito de transição para mudança de cor */
+}
+
+/* H3 e H4 */
+h1, h2, h3, h4{
+    color: #FFFFFF !important;
+    margin: 20px 0;
+}
+
+/* Efeito de hover nos H3 e H4 */
+h2:hover, h3:hover, h4:hover {
+    color: #a8b2ff; /* Cor do texto ao passar o mouse */
+}
+
+/* Lista não ordenada (ul) */
+ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0; /* Remove espaçamento interno */
+}
+
+/* Itens da lista (li) */
+li {
+    color: #ffffff; /* Cor do texto */
+    font-size: 1rem; /* Tamanho do texto */
+    padding: 8px 0; /* Espaçamento vertical */
+    transition: color 0.3s ease; /* Efeito de transição para mudança de cor */
+}
+
+/* Efeito de hover nos itens da lista */
+li:hover {
+    color: #a8b2ff; /* Cor do texto ao passar o mouse */
+}
+
+/* Efeito de hover no título */
+header h1:hover {
+    color: #a8b2ff; /* Cor do texto ao passar o mouse */
+}
+
+/* Parágrafos (p) */
+p {
+    color: #ffffff; /* Cor do texto */
+    transition: color 0.3s ease; /* Efeito de transição para mudança de cor */
+}
+
+/* Efeito de hover nos parágrafos */
+p:hover {
+    color: #a8b2ff; /* Cor do texto ao passar o mouse */
+}
+
+/* Restante do CSS permanece o mesmo... */
+
+/* Navbar futurista */
 #navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(135deg, rgba(51, 51, 51, 0.9), rgba(30, 30, 30, 0.9));
+    background: linear-gradient(135deg, #23263A, #1E2132);
     z-index: 1000;
     padding: 10px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s; /* Transição suave na cor do fundo */
+    transition: background-color 0.5s ease;
 }
 
-/* Ajuste do corpo para evitar sobreposição do menu */
-body {
-    margin-top: 80px;
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    color: #333; /* Cor do texto */
-}
-
-/* Lista de navegação */
+/* Links e botões com brilho futurista */
 #navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
+    padding-left: 0;
+    list-style: none;
 }
 
 #navbar ul li {
-    display: inline;
-    margin-right: 30px;
-}
-
-#navbar ul li:last-child {
-    margin-right: 0;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    gap: 20px;
+    background-color: #1C1E2A;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 #navbar ul li a {
+    color: #ffffff; /* Texto branco */
+    font-size: 1.1rem;
+    font-weight: 500;
     text-decoration: none;
-    color: #ff4c4c;
-    padding: 14px 20px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 1px;
+    padding: 8px 15px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 #navbar ul li a:hover {
-    background-color: rgba(255, 76, 76, 0.2); /* Cor de fundo no hover */
-    color: #ff7d7d;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #1c1e2a; /* Cor ao passar o mouse */
+    background-color: #a8b2ff;
+    box-shadow: 0px 4px 8px rgba(122, 136, 255, 0.4);
 }
 
-/* Adiciona uma linha embaixo dos itens de menu de forma animada */
-#navbar ul li a::after {
+/* Efeito de Deslize */
+nav a::before {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 0%;
-    height: 2px;
-    background: #ff4c4c;
-    transition: width 0.4s ease, left 0.4s ease;
-}
-
-#navbar ul li a:hover::after {
-    width: 100%;
     left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #a8b2ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-/* Estilo dos títulos */
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Estilo dos textos principais */
 h1, h2, h3, h4 {
-    color: #333;
+    color: #FFFFFF;
+    margin: 20px 0;
 }
 
-/* Estilo das seções */
-section {
-    padding: 100px 20px; /* Aumenta o padding superior */
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+/* Estilo das listas */
+ul {
+    padding-left: 20px; /* Recuo para listas */
+}
+
+/* Parágrafos */
+p {
+    line-height: 1.6;
     margin: 20px 0;
-    background-color: #ffffff;
+}
+
+/* Layout das seções */
+.section-a, .section-b {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza conteúdo dentro da seção */
+    padding: 40px 20px; /* Ajusta o padding */
+    margin: 20px 0;
+    background-color: #1C1E2A;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Layout da seção do banner */
+#banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: #1C1E2A;
     border-radius: 10px;
 }
 
-/* Estilo das seções de contato */
-.contact {
-    list-style: none;
-    padding: 0;
+/* Espaço entre a imagem e o texto */
+.content {
+    flex: 1;
+    margin-left: 20px;
 }
 
-.contact li {
-    margin: 10px 0;
+/* Ajuste da imagem no banner */
+#banner .image {
+    flex: 0 0 auto;
 }
 
-.contact li a {
-    text-decoration: none;
-    color: #ff4c4c;
-    padding: 10px;
-    display: inline-block;
+#banner .image img {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15%; /* Reduz o arredondamento para evitar aparência oval */
+    box-shadow: 0 4px 10px rgba(0, 212, 255, 0.4);
+    object-fit: cover;
+}
+
+/* Opcional: ajusta o layout do container */
+.container {
+    background: #1c1e2a;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.container p {
+    color: #d3d4de;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.container a {
+    color: #7a88ff;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.container a:hover {
+    color: #c3c7ff;
+    text-shadow: 0px 0px 8px rgba(160, 170, 255, 0.6);
+}
+
+
+/* Media queries para telas maiores */
+@media (min-width: 768px) {
+    #banner .image img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #banner .image img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Layout dos posts */
+.posts {
+    display: grid; /* Usar grid para os projetos */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaço entre os projetos */
+}
+
+.posts article {
+    background: #2C2F3A; /* Fundo dos artigos */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Efeito de hover para artigos */
+}
+
+.posts article:hover {
+    transform: scale(1.05); /* Efeito de hover para artigos */
+}
+
+.posts article .image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 212, 255, 0.5);
+}
+
+/* Tamanho fixo para imagens de projeto */
+.projeto-img {
+    margin-right: 20px;
+    width: 100%;
+    height: 300px; /* Defina uma altura fixa */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+/* Efeitos de hover nos ícones */
+.icon {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.contact li a:hover {
-    transform: translateX(5px);
-    color: #ff7d7d;
-}
-
-/* Estilo dos ícones */
-.icon {
-    transition: transform 0.3s ease;
-    font-size: 24px;
-    margin-right: 8px;
-    color: #10100fe2;
-}
-
 .icon:hover {
-    transform: scale(1.1);
-    color: #a1492e;
+    transform: scale(1.1); /* Aumenta o tamanho do ícone */
+    color: #00D1FF; /* Muda a cor do ícone ao passar o mouse */
 }
 
-/* Estilo das imagens */
-img {
-    max-width: 100%;
-    height: auto;
+.contact li a {
+    color: #00D1FF;
+    transition: color 0.3s ease;
 }
 
-/* Estilo personalizado para imagens específicas */
-.img-custom {
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.contact li a:hover {
+    color: #e0e0e0;
 }
 
-/* Estilo para padronizar o tamanho das imagens dos projetos */
-.projeto-img {
-    width: 500px; /* Largura fixz */
-    height: 500px; /* Altura fixa*/
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+/* Animação de entrada para seções */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Efeito hover ao passar o mouse sobre a imagem */
-.projeto-img:hover {
-    transform: scale(1.05);
+.section-a, .section-b {
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    /* Ajuste da margem superior para evitar sobreposição */
-    body {
-        margin-top: 120px;
-    }
+/* Rodapé */
+footer {
+    background: linear-gradient(145deg, #1c1e2a, #1b1d29);
+    color: #ffffff; /* Cor do texto do rodapé */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-    /* Ajuste do banner para dispositivos móveis */
-    #banner {
-        margin-top: 80px;
-    }
+footer a {
+    color: #7a88ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-    /* Ajuste da imagem no banner */
-    .section-a .image img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Ajuste dos itens do menu em dispositivos móveis */
-    #navbar ul li {
-        display: block; /* Exibe os itens do menu em coluna */
-        margin: 10px 0;
-    }
-
-    /* Ajustes adicionais para imagens em dispositivos menores */
-    img {
-        max-width: 90%;
-    }
+footer a:hover {
+    color: #a4a8c2;
 }
