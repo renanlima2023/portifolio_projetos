@@ -6,18 +6,25 @@
     <meta name="description" content="Portfólio de Renan Lima - Entusiasta em Análise de Dados, apresentando projetos e insights em visualização, ETL e relatórios interativos.">
     <meta name="keywords" content="Análise de Dados, Python, SQL, Power BI, Excel, Looker, Desenvolvimento.">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
+    
+    <!-- Font Awesome (CDN versão 6.5.0) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Estilo principal do projeto -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Power BI Icons (CDN) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/powerbi-icons/dist/powerbi-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <title>Portfólio de Projetos - Análise de Dados e Desenvolvimento</title>
 </head>
 
 <body class="is-preload">
-    <nav id="navbar">
-        <ul>
+    <<nav id="navbar">
+        <ul class="navbar-list">
             <li><a href="#banner">Início</a></li>
             <li><a href="#sobre-mim">Sobre Mim</a></li>
             <li><a href="#experiencias">Experiências</a></li>
@@ -26,37 +33,39 @@
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-
+    
 
     <div id="wrapper">
         <div id="main">
             <div class="inner">
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>Portfólio</strong> by Renan Lima</a>
+                    <a href="index.html" class="logo marquee"><strong>Portfólio</strong> by Renan Lima</a>
                 </header>
-
-               <!-- Banner -->
-               <section class="section-a" id="banner">
-                <div class="content">
-                    <header>
-                        <h1>Olá, seja bem-vindo(a) ao meu portfólio de projetos em Análise de Dados.</h1>
+                
+                <!-- Banner -->
+                <section class="section-a" id="banner">
+                    <div class="content">
+                        <header>
+                            <h1>Olá, seja bem-vindo(a) ao meu portfólio de projetos em Análise de Dados.</h1>
+                        </header>
                         <p>Nesta página, demonstro minhas habilidades em resolver problemas de negócio utilizando conceitos e ferramentas de Análise de Dados, através de dados públicos.</p>
-                    </header>
-                    <p>Você encontrará minhas experiências profissionais, habilidades de coleta, limpeza, transformação e visualização de grandes conjuntos de dados, além de ferramentas e conceitos relacionados à Análise de Dados. Sinta-se à vontade para entrar em contato através dos links no final da página.</p>
-                </div>
-                <span class="image">
-                    <img src="images/renanlima.jpg" class="img-fluid" alt="Portfólio de Renan Lima - Análise de Dados." />
-
-
-                </span>
-            </section>
+                        <p>Você encontrará minhas experiências profissionais, habilidades de coleta, limpeza, transformação e visualização de grandes conjuntos de dados, além de ferramentas e conceitos relacionados à Análise de Dados. Sinta-se à vontade para entrar em contato através dos links no final da página.</p>
+                    </div>
+                    <span class="image">
+                        <img src="images/renanlima.jpg" class="img-fluid" alt="Portfólio de Renan Lima - Análise de Dados." />
+                    </span>
+                </section>
+            </div>
+        </div>
+    </div>
+    
             
                 <!-- Sobre Mim -->
                 <section class="section-b" id="sobre-mim">
                     <h2>Meu nome é Renan Lima</h2>
-                    <p>Profissional com mais de uma década de experiência na área de tecnologia, focando atualmente em Análise de Dados. Graduado em Análise e Desenvolvimento de Sistemas, com MBA em Gerenciamento de Projetos em TI. Possuo certificação ITIL V4 Foundation, refletindo meu compromisso com as melhores práticas em gerenciamento de serviços de TI.</p>
-                    <p>Estou continuamente aprimorando minhas habilidades no desenvolvimento de apresentações e relatórios avançados no Power BI, conduzindo análises exploratórias para identificar padrões e tendências, e executando processos ETL. Meu objetivo é contribuir significativamente para a tomada de decisões estratégicas, fornecendo insights claros e acionáveis para todas as partes interessadas. Estou em constante busca por certificações adicionais para me manter atualizado com as últimas tendências e tecnologias do setor.</p>
+                    <p>Minha experiência de mais de 10 anos em suporte e infraestrutura de TI me preparou para entender a importância de sistemas eficientes e bem estruturados. Agora, estou aplicando essa expertise para atuar na análise de dados, onde posso contribuir diretamente para o sucesso das organizações.</p>
+                    <p>Sou formado em Análise e Desenvolvimento de Sistemas e tenho MBA em Gerenciamento de Projetos. Tenho explorado o campo de análise de dados por meio de projetos e formações, adquirindo habilidades sólidas em Python, SQL, Power BI, Tableau e Oracle Analytics. Mesmo não tendo atuado diretamente como analista de dados, estou constantemente ampliando meus conhecimentos e aprimorando minhas habilidades.</p>
                 </section>
 
                 <!-- Experiências -->
@@ -79,10 +88,12 @@
                         </header>
                         <div class="features">
                             <article>
-                                <span class="icon fa-gem"></span>
+                                <div class = "icon-container">
+                                    <i class="icon fas fa-gem"></i>
+                                </div>
                                 <div class="content">
                                     <h3>Linguagem de Programação e Banco de Dados</h3>
-                                    <ul>
+                                    <ul class = "tools">
                                         <li>Python</li>
                                         <li>SQL para extração de dados</li>
                                         <li>MongoDB, SQLite, PostgreSQL, MySQL, SQLServer</li>
@@ -90,10 +101,11 @@
                                 </div>
                             </article>
                             <article>
-                                <span class="icon solid fa-chart-line"></span>
+                                <div class="icon-container"></div>
+                                <i class="icon fas fa-chart-line"></i>
                                 <div class="content">
                                     <h3>Estatística para Análise de Dados</h3>
-                                    <ul>
+                                    <ul class = "tools">
                                         <li>Distribuições de Probabilidade</li>
                                         <li>Estatística Descritiva</li>
                                         <li>Estatística Inferencial</li>
@@ -103,19 +115,21 @@
                                 </div>
                             </article>
                             <article>
-                                <span class="icon solid fa-signal"></span>
+                                <div class="icon-container"></div>
+                                <i class="icon fas fa-code"></i>
                                 <div class="content">
                                     <h3>Engenharia de Software</h3>
-                                    <ul>
+                                    <ul class = "tools">
                                         <li>Git e Github</li>
                                     </ul>
                                 </div>
                             </article>
                             <article>
-                                <span class="icon solid fa-database"></span>
+                                <div class="icon-container"></div>
+                                <i class="icon fas fa-database"></i>
                                 <div class="content">
                                     <h3>Visualização de Dados</h3>
-                                    <ul>
+                                    <ul class="tools">
                                         <li>Excel</li>
                                         <li>Power BI</li>
                                         <li>Matplotlib e Seaborn</li>
@@ -136,39 +150,48 @@
 									</header>
 									<div class="posts">
 										<!-- Imagem e Projeto -->
-<article>
-    <a href="https://app.powerbi.com/view?r=eyJrIjoiZjA0NDllZDEtYjliMi00ZTkzLThlNDAtMWU4Mzk5NzU0NGM5IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9&pageName=ReportSectionf952ca90ab5bea261dec" class="image">
-        <img src="images/img02.jpg" class="img-fluid projeto-img" alt="Portfólio de Renan Lima - Análise de Dados." />
-    </a>
-    <h3>Análise de Desempenho de Vendas para uma Distribuidora de Alimentos e Bebidas</h3>
-    <p>A empresa necessita acompanhar o desempenho dos vendedores...</p>
-    <h4>Ferramentas Utilizadas</h4>
-    <ul>
-        <li>Excel.</li>
-        <li>Power BI Desktop.</li>
-        <li>Power Query.</li>
-    </ul>
-</article>
+                        <article>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiZjA0NDllZDEtYjliMi00ZTkzLThlNDAtMWU4Mzk5NzU0NGM5IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9&pageName=ReportSectionf952ca90ab5bea261dec" class="image">
+                                <img src="images/img02.jpg" class="img-fluid projeto-img" alt="Portfólio de Renan Lima - Análise de Dados." />
+                            </a>
+                            <h3>Análise de Desempenho de Vendas para uma Distribuidora de Alimentos e Bebidas</h3>
+                            <p>Desenvolvi uma solução de análise de desempenho de vendedores e faturamento, automatizando o processo de atualização de relatórios e aprimorando a eficiência na tomada de decisão. Esse projeto oferece uma visão clara e assertiva, reduzindo tarefas operacionais e focando em dados que realmente agregam valor.
+
+                                O relatório inclui:
+                                
+                                Comparação de faturamento entre o ano atual e o anterior
+                                Análise detalhada de faturamento, margem bruta e volume vendido
+                                Identificação do melhor mês de vendas e metas atingidas
+                                Análise de faturamento por produto
+                                Top 3 vendedores por faturamento e desempenho de meta
+                                Essa abordagem garante maior agilidade e precisão na gestão comercial, orientando o gerente na avaliação de desempenho e definição de estratégias.o</p>
+                            <h4>Ferramentas Utilizadas</h4>
+                            <ul class = "tools">
+                                <li>Excel.</li>
+                                <li>Power BI Desktop.</li>
+                                <li>Power Query.</li>
+                            </ul>
+                        </article>
 
 										
-										<article>
-											<a href="https://app.powerbi.com/view?r=eyJrIjoiNzI2OTg2YjYtYTc0Ny00ZTY2LWFhNTItMjcwYTdmMmZjZjFmIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"class="image"><img src="images/rh.jpeg" class= "img-fluid projeto-img" alt="Portfólio de Renan Lima - Análise de Dados." /></a>
-											<h3>Gestão Inteligente de Recursos Humanos</h3>
-											<p>O Gestão Inteligente de Recursos Humanos é um dashboard avançado projetado para proporcionar uma visão abrangente e detalhada da força de trabalho de uma organização. Este projeto visa otimizar a gestão de recursos humanos através da coleta, análise e visualização de dados críticos, permitindo decisões mais informadas e estratégias mais eficazes.</p>
-											<h4>Ferramentas Utilizadas</h4>
-											<ul>
-												<li>Excel.</li>
-												<li>Power BI Desktop.</li>
-												<li>Power Query.</li>
-											</ul>
+						<article>
+					<a href="https://app.powerbi.com/view?r=eyJrIjoiNzI2OTg2YjYtYTc0Ny00ZTY2LWFhNTItMjcwYTdmMmZjZjFmIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"class="image"><img src="images/rh.jpeg" class= "img-fluid projeto-img" alt="Portfólio de Renan Lima - Análise de Dados." /></a>
+					<h3>Gestão Inteligente de Recursos Humanos</h3>
+			        <p>O Gestão Inteligente de Recursos Humanos é um dashboard avançado projetado para proporcionar uma visão abrangente e detalhada da força de trabalho de uma organização. Este projeto visa otimizar a gestão de recursos humanos através da coleta, análise e visualização de dados críticos, permitindo decisões mais informadas e estratégias mais eficazes.</p>
+					<h4>Ferramentas Utilizadas</h4>
+					<ul class = "tools">
+					<li>Excel.</li>
+					<li>Power BI Desktop.</li>
+					<li>Power Query.</li>
+					</ul>
 										
-										</article>
+						</article>
 										<article>
 											<a href="https://app.powerbi.com/view?r=eyJrIjoiZWNhMzVjNTEtYjY0NC00M2Y4LTlkNzUtY2YzYWRiN2YxMzIyIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9&pageName=13238d3b8555b509a9e3" class="image"><img src="images/finance.jpg" class= "img-fluid projeto-img"  alt="Portfólio de Renan Lima - Análise de Dados." /></a>
 											<h3>Dashboard de Análise Financeira</h3>
 											<p>Neste projeto, desenvolvi um dashboard de análise financeira que integra dados de balanço patrimonial e demonstração de resultados (DRE). O objetivo principal é fornecer uma visão abrangente e clara da saúde financeira da empresa, permitindo uma análise detalhada das receitas, despesas e saldo de contas ao longo do tempo.</p>
 											<h4>Ferramentas Utilizadas</h4>
-                                            <ul>
+                                            <ul class = "tools">
                                                 
 												<li>Banco de dados MySQL alocado na GCP.</li>
 												<li>Power BI Desktop.</li>
@@ -189,7 +212,7 @@
 
                                                 O objetivo principal foi estimar o faturamento esperado e compreender a relação entre risco e retorno do negócio, fornecendo ao empresário uma base sólida para sua tomada de decisão.</p>
                                                 <h4>Ferramentas Utilizadas</h4>
-                                                <ul>
+                                                <ul class = "tools">
 
 												<li>Google Sheets.</li>
 												<li>Looker Studio.</li>
@@ -206,7 +229,7 @@
 
                                                 Através da análise de dados, organizei e transformei as informações no VS Code, utilizando Python para processamento e limpeza. Em seguida, com o auxílio do Streamlit, criei visualizações interativas e detalhadas em um dashboard, permitindo uma compreensão clara de métricas essenciais como número de restaurantes, avaliações médias e tendências por tipo de culinária. O resultado foi uma plataforma analítica completa que permite ao CEO do Elegant Restaurant tomar decisões baseadas em dados para expandir e otimizar a experiência dos usuários.</p>
                                             <h4>Ferramentas Utilizadas</h4>
-                                            <ul>
+                                            <ul class = "tools">
 												<li>Python.</li>
 												<li>Vs Code.</li>
                                                 <li>Streamlit.</li>
@@ -220,27 +243,25 @@
 								</section>
 
 							<!-- Contato -->
-									<section class="section-b" id="contato">
-										<header class="major">
-											<h2>Entre em Contato</h2>
-										</header>
-										<p>Sinta-se à vontade para entrar em contato.</p>
-										<ul class="contact">
-											<li class="icon solid fa-envelope"><a href="mailto:renan.lima04@gmail.com">renan.lima04@gmail.com</a></li>
-											<li class="icon brands fa-linkedin">
-												<a href="https://www.linkedin.com/in/renan-slima/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-											</li>
-											<li class="icon brands fa-github">
-												<a href="https://github.com/renanlima2023" target="_blank" rel="noopener">Github</a>
-											</li>
-											<li class="icon brands fa-medium"><a href="https://medium.com/@renan.lima04" target="_blank" rel="noopener noreferrer">Medium</a></li>
-										</ul>
-									</section>
+                            <section class="section-b" id="contato">
+                                <header class="major">
+                                    <h2>Entre em Contato</h2>
+                                </header>
+                                <p>Sinta-se à vontade para entrar em contato.</p>
+                                <ul class="contact">
+                                    <li><span class="icon solid fas fa-envelope"></span><a href="mailto:renan.lima04@gmail.com">renan.lima04@gmail.com</a></li>
+                                    <li><span class="icon brands fab fa-linkedin"></span><a href="https://www.linkedin.com/in/renan-slima/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                                    <li><span class="icon brands fab fa-github"></span><a href="https://github.com/renanlima2023" target="_blank" rel="noopener">GitHub</a></li>
+                                    <li><span class="icon brands fab fa-medium"></span><a href="https://medium.com/@renan.lima04" target="_blank" rel="noopener noreferrer">Medium</a></li>
+                                </ul>
+                            </section>
+                            
 
 						</div>
 					</div>
 			</div>
-        <!-- Footer -->
+
+         <!-- Footer -->
         <footer id="footer">
             <div class="inner">
                 <ul class="copyright">
@@ -248,6 +269,7 @@
                 </ul>
             </div>
         </footer>
+		
 		
 	</body>
 </html>
