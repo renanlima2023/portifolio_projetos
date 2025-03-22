@@ -1,177 +1,83 @@
+/* Variáveis globais */
 :root {
-  --primary-color: #ffffff; /* Cor principal (texto) */
+  --primary-color: #ffffff; /* Cor principal (branco) */
   --secondary-color: #a8b2ff; /* Cor secundária (hover) */
   --background-color: #1c1e2a; /* Cor de fundo */
-  --accent-color: #00D1FF; /* Cor de destaque (hover) */
+  --accent-color: #00D1FF; /* Cor de destaque */
   --shadow-color: rgba(0, 0, 0, 0.5); /* Cor da sombra */
 }
-
-/* Corpo e fonte */
+/* ===== Base ===== */
 body {
-  font-family: 'Poppins', sans-serif; /* Defina uma fonte agradável */
-  background-color: var(--background-color); /* Cor de fundo suave */
-  color: var(--primary-color); /* Texto branco para legibilidade */
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
 }
 
-/* ======= Layout Geral ======= */
-/* Estilo para o container principal */
+h1, h2, h3, h4 {
+  color: var(--primary-color);
+  margin: 20px 0;
+  position: relative;
+}
+
+h1::after, h2::after, h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+h1:hover::after, h2:hover::after, h3:hover::after {
+  transform: scaleX(1); /* Mostra a linha ao passar o mouse */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  color: var(--primary-color);
+  font-size: 1rem;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+li:hover {
+  color: var(--secondary-color);
+}
+
+p {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+p:hover {
+  color: var(--secondary-color);
+}
+
+/* ===== Layout ===== */
 #wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 10px;
 }
 
-/* Estilo para o conteúdo principal */
 #main {
-  background-color: #f4f4f4; /* Cor de fundo do conteúdo */
   padding: 20px;
 }
 
-/* Estilo para a área interna */
 .inner {
   max-width: 1200px;
   margin: 10px auto;
   padding: 10px;
 }
 
-/* Estilo do cabeçalho */
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-#header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px ;
-  background-color: #161F2C; /* Cor de fundo do cabeçalho */
-  color: var(--accent-color); /* Cor do texto */
-}
-
-/* Estilo para o link da logo */
-#header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #15035c3a; /* Cor da logo */
-  text-decoration: none;
-}
-
-/* Estilo para o link da logo ao passar o mouse */
-#header .logo:hover {
-  color: #2837a72f; /* Cor ao passar o mouse */
-}
-
-
-/* ======= Header ======= */
-
-#header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding:10px 20px;
-  background: transparent;
-  position: relative;
-}
-
-#header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--background-colorr);
-  text-decoration: none;
-  position: relative;
-  margin-right: 20px;
-}
-
-#header .logo::after {
-  content: '';
-  position: absolute;
-  bottom: -5px; /* Coloque um pouco abaixo do texto */
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--secondary-color); /*Cor secundária (hover) */ 
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-#header .logo:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-/* Títulos */
-h1, h2, h3, h4 {
-  color: #FFFFFF !important;
-  margin: 20px 0;
-  position: relative; /* Necessário para o efeito da linha */
-}
-
-/* Efeito de hover nos títulos */
-h2:hover, h3:hover, h4:hover {
-  color: #a8b2ff; /* Cor do texto ao passar o mouse */
-}
-
-/* Linha de efeito nos títulos */
-h1::after, h2::after, h3::after, h4::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: var(--secondary-color);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-  margin-top: 5px;
-}
-
-h1:hover::after, h2:hover::after, h3:hover::after, h4:hover::after {
-  transform: scaleX(1); /* Mostra a linha ao passar o mouse */
-}
-
-/* Lista não ordenada (ul) */
-ul {
-  list-style: none; /* Remove marcadores */
-  padding: 0; /* Remove espaçamento interno */
-}
-
-/* Itens da lista (li) */
-li {
-  color: var(--primary-color); /* Cor do texto */
-  font-size: 1rem; /* Tamanho do texto */
-  padding: 8px 0; /* Espaçamento vertical */
-  transition: color 0.3s ease; /* Efeito de transição para mudança de cor */
-}
-
-/* Efeito de hover nos itens da lista */
-li:hover {
-  color: var(--secondary-color); /* Cor do texto ao passar o mouse */
-}
-
-/* Parágrafos (p) */
-p {
-  color: var(--primary-color); /* Cor do texto */
-  transition: color 0.3s ease; /* Efeito de transição para mudança de cor */
-}
-
-/* Efeito de hover nos parágrafos */
-p:hover {
-  color: var(--secondary-color); /* Cor do texto ao passar o mouse */
-}
-
-/* Navbar futurista */
+/* Estilo geral da navbar */
 #navbar {
   position: fixed;
   top: 0;
@@ -179,27 +85,25 @@ p:hover {
   background: linear-gradient(135deg, #23263A, #1E2132);
   z-index: 1000;
   padding: 10px 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px var(--shadow-color);
   transition: background-color 0.5s ease;
 }
-
-/* Links e botões com brilho futurista */
-#navbar ul {
-  padding-left: 0;
-  list-style: none;
-}
-
-#navbar ul li {
-  display: inline-block;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 20px;
+.navbar-list {
+  display: flex;
+  justify-content: center;
   gap: 20px;
-  background-color: var(--background-color);
-  padding: 10px;
-  border-radius: 8px;
+  padding: 0;
 }
 
+.navbar-link {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+/* Links dentro da navbar */
 #navbar ul li a {
   color: var(--primary-color); /* Texto branco */
   font-size: 1.1rem;
@@ -212,18 +116,19 @@ p:hover {
   overflow: hidden;
 }
 
+/* Efeito de hover nos links */
 #navbar ul li a:hover {
   color: var(--background-color); /* Cor ao passar o mouse */
   background-color: var(--secondary-color);
   box-shadow: 0px 4px 8px rgba(122, 136, 255, 0.4);
 }
 
-/* Efeito de Deslize */
-nav a::before {
+/* Animação de deslize para os links */
+#navbar ul li a::before {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   height: 3px;
   width: 100%;
   background-color: var(--secondary-color);
@@ -231,228 +136,179 @@ nav a::before {
   transition: transform 0.3s ease;
 }
 
-nav a:hover::before {
+#navbar ul li a:hover::before {
   transform: scaleX(1);
 }
-
-/* Layout das seções */
-.section-a, .section-b {
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza conteúdo dentro da seção */
-  padding: 40px 20px; /* Ajusta o padding */
-  margin: 20px 0;
-  background-color: var(--background-color);
-  border-radius: 10px;
-  animation: fadeInUp 1s ease-out;
+.navbar-link:hover {
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 8px rgba(122, 136, 255, 0.4);
 }
 
-/* Layout da seção do banner */
+/* ===== Banner ===== */
 #banner {
+  padding-top: 80px; /* Espaçamento superior para evitar sobreposição */
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  padding: 10px;
+  justify-content: flex-start;
   background-color: var(--background-color);
   border-radius: 10px;
 }
 
-/* Espaço entre a imagem e o texto */
-.content {
-  flex: 1;
-  margin-left: 20px;
-}
-
-/* Ajuste da imagem no banner */
-#banner .image {
-  flex: 0 0 auto;
-}
-
+/* Imagem do banner */
 #banner .image img {
-  margin-right: 20px;
-  width: 500px;
+  max-width: 100%;
   height: auto;
-  border-radius: 15%; /* Reduz o arredondamento para evitar aparência oval */
-  box-shadow: 0 4px 10px rgba(0, 212, 255, 0.4);
   object-fit: cover;
+  border-radius: 15%;
+  box-shadow: 0 4px 10px rgba(0, 212, 255, 0.4);
 }
 
-/* Features Section */
-.features article, .posts article {
-  background: #2C2F3A; /* Cor de fundo dos artigos */
-  color: #ffffff; /* Cor do texto dos artigos */
-  padding: 20px; /* Preenchimento interno */
-  border-radius: 8px; /* Borda arredondada */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra nos artigos */
-  text-align: center; /* Centraliza o texto dos artigos */
-  transition: transform 0.3s ease; /* Transição suave para hover */
-}
-
-
-.features article:hover, .posts article:hover {
-  transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
-}
-
+/* ===== Features ===== */
 .features {
-  display: flex; /* Usar Flexbox para o layout */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
-  justify-content: space-around; /* Espaçamento entre os itens */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .features article {
-  width: 45%; /* Cada item ocupa 45% da largura */
-  background-color: #2C2F3A; /* Cor de fundo dos itens */
-  color: #ffffff; /* Cor do texto dos itens */
-  padding: 20px; /* Preenchimento interno dos itens */
-  border-radius: 10px; /* Bordas arredondadas */
-  margin: 10px 0; /* Margem entre os itens */
-  display: flex; /* Usar Flexbox para o layout */
-  align-items: center; /* Alinha verticalmente */
-  gap: 20px; /* Espaçamento entre o ícone e o texto */
+  background: #2C2F3A;
+  color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.features article:hover {
+  transform: scale(1.05);
 }
 
 .features .icon {
-  font-size: 3rem; /* Tamanho do ícone */
-  color: #FF6B6B; /* Cor do ícone */
-  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-right: 10px;
 }
 
-.icon:hover {
-  transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
-  color: var(--accent-color); /* Altera a cor do ícone ao passar o mouse */
+.features .icon:hover {
+  transform: scale(1.1);
 }
 
-/* Layout dos posts */
+/* ===== Posts ===== */
 .posts {
-  display: grid; /* Usar grid para os projetos */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas responsivas */
-  gap: 20px; /* Espaço entre os projetos */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .posts article {
-  background: #2C2F3A; /* Fundo dos artigos */
+  background: #2C2F3A;
   padding: 20px;
   border-radius: 8px;
-  transition: transform 0.3s ease; /* Efeito de hover para artigos */
+  transition: transform 0.3s ease;
 }
 
 .posts article:hover {
-  transform: scale(1.05); /* Efeito de hover para artigos */
-}
-
-.posts article .image img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 212, 255, 0.5);
 }
 
-/* Tamanho fixo para imagens de projeto */
 .projeto-img {
-  margin-right: 20px;
-  width: 100%;
-  height: 300px; /* Defina uma altura fixa */
-  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Seção de contato */
-.section-b {
-  margin: 20px 0;
-  padding: 20px;
-  background-color: var(--background-color);
-  border-radius: 8px;
-}
-
-.section-b .major h2 {
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.section-b p {
-  color: var(--primary-color);
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Lista de contatos */
-.contact {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact li {
-  display: flex;
-  align-items: center;
-  color: var(--primary-color);
-  font-size: 1rem;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--secondary-color); /* Linha de separação */
-}
-
-.contact li:last-child {
-  border-bottom: none; /* Remove a linha do último item */
-}
-
-/* Ícones e links de contato */
-.contact li .icon {
-  margin-right: 10px;
-  color: var(--accent-color);
-  font-size: 1.5rem;
-}
-
-.contact li a {
-  color: var(--primary-color);
+.actions li {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--accent-color);
+  background-color: transparent;
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actions li:hover {
+  transform: scale(1.05); /* Aumenta levemente o botão */
+  box-shadow: 0 4px 10px rgba(0, 212, 255, 0.4); /* Sombra futurista */
+}
+/* ===== Contato ===== */
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  text-align: center; /* Alinha o texto ao centro */
+  margin: 40px auto; /* Espaçamento externo */
+  padding: 30px; /* Espaçamento interno */
+  background-color: var(--background-color); /* Cor de fundo */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  max-width: 800px; /* Largura máxima para evitar que fique muito largo */
+  width: 100%; /* Garante que ocupe toda a largura disponível */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+}
+
+#contato header h2 {
+  color: #ffffff; /* Cor do título */
+  font-size: 2rem; /* Tamanho maior para o título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+#contato p {
+  color: var(--primary-color); /* Cor do texto */
+  font-size: 1.1rem; /* Tamanho ligeiramente maior para o texto */
+  margin-bottom: 25px; /* Espaçamento abaixo do parágrafo */
+}
+
+#contato ul.contact {
+  list-style: none; /* Remove marcadores padrão */
+  padding: 0; /* Remove espaçamento interno */
+  margin: 0; /* Remove margens padrão */
+  width: 100%; /* Garante que a lista ocupe toda a largura disponível */
+}
+
+#contato ul.contact li {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente ícone e texto */
+  justify-content: center; /* Centraliza horizontalmente ícone e texto */
+  color: var(--primary-color); /* Cor do texto */
+  font-size: 1rem; /* Tamanho do texto */
+  padding: 12px 0; /* Espaçamento vertical */
+  transition: transform 0.3s ease, color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+#contato ul.contact li:hover {
+  transform: scale(1.02); /* Aumenta levemente ao passar o mouse */
+}
+
+#contato ul.contact li i {
+  margin-right: 12px; /* Espaço entre o ícone e o texto */
+  color: var(--accent-color); /* Cor dos ícones */
+  font-size: 1.6rem; /* Ícone maior e mais destacado */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contato ul.contact li i:hover {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  color: var(--secondary-color); /* Altera a cor do ícone */
+}
+
+#contato ul.contact li a {
+  color: var(--primary-color); /* Cor do texto dos links */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: 500; /* Texto em negrito para os links */
+  transition: color 0.3s ease;
 }
 
 .contact li a:hover {
   color: var(--secondary-color);
   transform: scale(1.1);
 }
-/* Botões Saiba Mais */
-.actions li {
-  display: inline-block; /* Permite que os itens da lista sejam exibidos em linha */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border: 2px solid var(--accent-color); /* Borda do botão */
-  background-color: transparent; /* Sem preenchimento */
-  color: white; /* Cor do texto padrão */
-  text-decoration: none; /* Remove sublinhado */
-  font-weight: bold; /* Negrito para o texto */
-  border-radius: 8px; /* Bordas arredondadas */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+#contato ul.contact li a:hover {
+  color: var(--secondary-color); /* Altera a cor do texto ao passar o mouse */
 }
-
-/* Efeito de hover nos botões Saiba Mais */
-.actions li:hover {
-  transform: scale(1.05); /* Aumenta levemente o botão */
-  box-shadow: 0 4px 10px rgba(197, 64, 64, 0.2); /* Sombra ao passar o mouse */
-  /* Mantendo a cor do texto como branco ao passar o mouse */
-  color: white; /* Garante que a cor do texto permaneça branca no hover */
-}
-.actions li a {
-  color: white; /* Garante que a cor do texto seja branca */
-}
-
-/* Efeito de hover nos botões Saiba Mais */
-.actions li a:hover {
-  color: rgb(29, 161, 187); /* Garante que a cor do texto permaneça branca ao passar o mouse */
-}
-
-
-
-.tools {
-  list-style-type: disc; /* Define o estilo de marcadores */
-  margin: 10px 0; /* Espaçamento superior e inferior */
-  padding-left: 20px; /* Adiciona espaçamento à esquerda */
-  color: var(--primary-color); /* Cor do texto */
-}
-
-.tools li {
-  margin: 5px 0; /* Margem entre os itens da lista */
-}
-
-
-
-
