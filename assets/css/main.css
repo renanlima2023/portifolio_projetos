@@ -312,3 +312,8 @@ p:hover {
 #contato ul.contact li a:hover {
   color: var(--secondary-color); /* Altera a cor do texto ao passar o mouse */
 }
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--primary-color);
