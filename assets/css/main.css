@@ -313,8 +313,8 @@ p:hover {
   color: var(--secondary-color); /* Altera a cor do texto ao passar o mouse */
 }
 
-.footer {
-  text-align: center;
-  margin-top: 20px;
-  color: var(--primary-color);
+@media (max-width: 600px) {
+  img[alt="Visit counter For Websites"] {
+      width: 100px !important;  /* Reduz ainda mais em telas pequenas */
+  }
 }
