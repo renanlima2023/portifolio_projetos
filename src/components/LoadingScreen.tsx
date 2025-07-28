@@ -46,7 +46,7 @@ const LoadingScreen = () => {
       <div className="text-center">
         {/* Logo circular com animação */}
         <div className="w-24 h-24 mx-auto mb-8 rounded-full border-2 border-primary/20 flex items-center justify-center bg-card/50 animate-pulse">
-        <img src = "/lovable-uploads/python.png" alt="Logo Python" className="w-full h-full object-contain p-2 animate-fade-in" />
+       <img src="/python.png" alt="Logo Python" className="w-full h-full object-contain p-2 animate-fade-in" />
         </div>
 
         {/* Barra de progresso */}
