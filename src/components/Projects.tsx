@@ -16,7 +16,7 @@ export const Projects = () => {
     {
       title: "Gestão Inteligente de Recursos Humanos",
       description: "O Gestão Inteligente de Recursos Humanos é um dashboard avançado projetado para proporcionar uma visão abrangente e detalhada da força de trabalho de uma organização. Este projeto visa otimizar a gestão de recursos humanos através da coleta, análise e visualização de dados críticos, permitindo decisões mais informadas e estratégias mais eficazes.",
-      image: "/lovable-uploads/rh.jpeg",
+      image: "/images/rh.jpeg",
       category: "Business Intelligence",
       technologies: ["Excel", "Power BI", "Power Query"],
        featured: true,
@@ -25,7 +25,7 @@ export const Projects = () => {
      {
       title: "Análise de Desempenho de Vendas para uma Distribuidora de Alimentos e Bebidas",
       description: "Desenvolvi uma solução de análise de desempenho de vendedores e faturamento, automatizando o processo de atualização de relatórios e aprimorando a eficiência na tomada de decisão. Esse projeto oferece uma visão clara e assertiva, reduzindo tarefas operacionais e focando em dados que realmente agregam valor",
-      image: "/lovable-uploads/img02.jpg",
+      image: "/images/img02.jpg",
       category: "Business Intelligence",
       technologies: ["Excel", "Power BI", "Power Query"],
       liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiZjA0NDllZDEtYjliMi00ZTkzLThlNDAtMWU4Mzk5NzU0NGM5IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9&pageName=ReportSectionf952ca90ab5bea261dec",
@@ -34,7 +34,7 @@ export const Projects = () => {
     {
       title: "Dashboard de Análise Financeira",
       description: "Neste projeto, desenvolvi um dashboard de análise financeira que integra dados de balanço patrimonial e demonstração de resultados (DRE). O objetivo principal é fornecer uma visão abrangente e clara da saúde financeira da empresa, permitindo uma análise detalhada das receitas, despesas e saldo de contas ao longo do tempo.",
-      image: "/lovable-uploads/finance.jpg",
+      image: "/images/finance.jpg",
       category: "Financeira",
       technologies: ["Excel", "Power BI", "Power Query"],
       liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiZWNhMzVjNTEtYjY0NC00M2Y4LTlkNzUtY2YzYWRiN2YxMzIyIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9&pageName=13238d3b8555b509a9e3"
@@ -42,7 +42,7 @@ export const Projects = () => {
     {
       title: "Estimativa de Faturamento para o Compartilhamento de Bicicletas",
       description: "Neste projeto, busquei avaliar o potencial de investimento em um negócio de compartilhamento de bicicletas no Brasil. Através da análise de dados, utilizei Google Sheets para organizar e transformar as informações e Looker Studio para criar visualizações interativas e detalhadas.",
-      image: "/lovable-uploads/bike.jpg",
+      image: "/images/bike.jpg",
       category: "Análise Estatística",
       technologies: ["Google Sheets", "Looker Studio"],
       liveDemoUrl: "https://lookerstudio.google.com/s/gQD5JVt7HHE"
@@ -50,7 +50,7 @@ export const Projects = () => {
     {
       title: "Marketplace de Restaurantes",
       description: "Neste projeto, busquei avaliar e analisar o desempenho de um marketplace de restaurantes internacional, o Elegant Restaurant. Utilizando dados do Zomato.csv (disponível no Kaggle), meu objetivo foi identificar oportunidades estratégicas e avaliar o potencial de crescimento da empresa em diferentes regiões.",
-      image: "/lovable-uploads/restaurante.png",
+      image: "/images/restaurante.png",
       category: "Business Intelligence",
       technologies: ["Python","VS Code","Streamlit"],
       liveDemoUrl: "https://projetozomato-5muoknzquws5w7dcoxkfw6.streamlit.app/",
@@ -60,7 +60,7 @@ export const Projects = () => {
     {
       title: "Análise de Chamados de Suporte - LK Consulting",
       description: "Neste projeto, desenvolvi um dashboard no Power BI para analisar o desempenho do atendimento de chamados de suporte da LK Consulting. O objetivo foi monitorar métricas-chave como o volume de chamados abertos e fechados, o percentual de SLA atendido e os principais motivos dos chamados.",
-      image: "/lovable-uploads/suporte.png",
+      image: "/images/suporte.png",
       category: "Business Intelligence",
       technologies: ["Power BI", "Power Query", "Excel", "DAX"],
       liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiOGZhYzJiZmUtNWFlNC00MmZlLTg1NGYtYzBkOWJhMTkyZTIxIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"
