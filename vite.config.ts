@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: mode === 'production' ? '/portifolio_projetos/' : '/',
+  base: "./",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
