@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: "./",
+  base: "https://renanlima2023.github.io/portifolio_projetos/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
