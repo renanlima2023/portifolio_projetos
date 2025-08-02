@@ -27,7 +27,7 @@ export const Experience = () => {
     },
     {
       period: "2007 - 2009",
-      company: "Estagiário de Alista de Suporte Técnico",
+      company: "Estagiário de Analista de Suporte Técnico",
       role: "Unsina Coruripe - Alagoas",
       description: "Prestei suporte técnico de 1º e 2º nível (hardware, software, rede) e realizei manutenção preventiva e corretiva, otimizando a eficiência dos sistemas. Participei da implantação de um sistema de GED, aprimorando habilidades em gestão de informações e resolução de problemas complexos, fundamentais para a análise de dados.",
       side: "right"
