@@ -14,12 +14,22 @@ export const Projects = () => {
   const projects = [
    
     {
+      title: "Módulo Produtivo: Dashboard de Análise de Vendas e Gargalos Operacionais para Xperiun Metalúrgica",
+      description:"A Xperiun Metalúrgica, uma empresa que fabrica componentes industriais sob medida, enfrentava um cenário de caos operacional com controles manuais e informações fragmentadas. Isso resultava em atrasos, retrabalho, aumento de custos e insatisfação de clientes. O objetivo deste projeto foi transformar esse cenário, implementando uma solução de análise de dados para trazer clareza, identificar gargalos e fundamentar a tomada de decisões com evidências. O projeto incluiu a definição de KPIs estratégicos, como tempo médio por setor e taxa de retrabalho, para monitorar o desempenho da produção. A partir da análise dos dados levantados, foi desenvolvido um dashboard interativo no Power BI, permitindo que a gestão e os times operacionais visualizem o fluxo de produção, identifiquem precisamente onde as engrenagens estão travando e implementem soluções rápidas e eficazes.",
+      image: "/images/metalurgica.jpg",
+      category: "Business Intelligence",
+      technologies: ["Power BI", "Dax", "Modelagem de dados"],
+      featured: true,
+      liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiMzU4YWE1OWYtM2RhNC00ODBiLWEzYzktYjhiMmU3MmU5OWI5IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9",
+      githubUrl:"https://github.com/renanlima2023/moduloprodutivo-xperiun"
+    },
+    
+    {
       title: "Gestão Inteligente de Recursos Humanos",
       description: "O Gestão Inteligente de Recursos Humanos é um dashboard avançado projetado para proporcionar uma visão abrangente e detalhada da força de trabalho de uma organização. Este projeto visa otimizar a gestão de recursos humanos através da coleta, análise e visualização de dados críticos, permitindo decisões mais informadas e estratégias mais eficazes.",
       image: "/images/rh.jpeg",
       category: "Business Intelligence",
       technologies: ["Excel", "Power BI", "Power Query"],
-       featured: true,
       liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiNzI2OTg2YjYtYTc0Ny00ZTY2LWFhNTItMjcwYTdmMmZjZjFmIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"
     },
      {
@@ -64,15 +74,10 @@ export const Projects = () => {
       category: "Business Intelligence",
       technologies: ["Power BI", "Power Query", "Excel", "DAX"],
       liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiOGZhYzJiZmUtNWFlNC00MmZlLTg1NGYtYzBkOWJhMTkyZTIxIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"
-    }
-    /*}
-    {
-      title: "Estimativa de Faturamento para Bicicletas",
-      description: "Neste projeto, busquei avaliar o potencial de investimento em um negócio de compartilhamento de bicicletas no Brasil.",
-      image: "/lovable-uploads/f8c9e005-d2d4-4cfa-9fa3-279ee81b175c.png",
-      category: "Machine Learning",
-      technologies: ["Python", "Scikit-learn", "Google Sheets", "Looker Studio"]
     },
+    
+    
+    /*
     {
       title: "Marketplace de Restaurantes",
       description: "Neste projeto, busquei avaliar e analisar o desempenho de um marketplace de restaurantes internacional, o Elegant Restaurant.",
