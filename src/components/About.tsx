@@ -1,6 +1,7 @@
 
 import { BarChart3, Database, Brain, TrendingUp, Trophy, Clock, Code, PieChart, FileSpreadsheet, Grid3x3, Calculator, LineChart, AreaChart, Cpu } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { SiApacheairflow } from 'react-icons/si';
 
 export const About = () => {
   const skills = [
@@ -134,7 +135,7 @@ export const About = () => {
               <div className="space-y-8">
                 {[
                   { name: "Python", level: 75, color: "from-blue-500 to-purple-600" },
-                  { name: "SQL", level: 85, color: "from-purple-500 to-pink-600" },
+                  { name: "SQL", level: 75, color: "from-purple-500 to-pink-600" },
                   { name: "Power BI", level: 100, color: "from-blue-500 to-purple-600" },
                   { name: "DAX", level: 80, color: "from-purple-500 to-pink-600" }
                 ].map((skill) => (
@@ -164,7 +165,9 @@ export const About = () => {
                 {[
                   { name: "Excel", level: 70, color: "from-cyan-400 to-blue-500" },
                   { name: "Estatística", level: 60, color: "from-purple-500 to-pink-600" },
-                  { name: "AWS/Azure", level: 65, color: "from-blue-500 to-purple-600" }
+                  { name: "AWS/Azure", level: 65, color: "from-blue-500 to-purple-600" },
+                  {name: "Apache Airflow", level: 60, color: "from-blue-500 to-purple-600" }
+
                 ].map((skill) => (
                   <div key={skill.name} className="group">
                     <div className="flex justify-between items-center mb-3">
@@ -200,6 +203,7 @@ export const About = () => {
               { name: "Matplotlib", icon: LineChart },
               { name: "Seaborn", icon: AreaChart },
               { name: "Scikit-learn", icon: Brain },
+              { name: "Apache Airflow", icon: SiApacheairflow },
              // { name: "TensorFlow", icon: Cpu }
             ].map((tech) => (
               <div 

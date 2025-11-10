@@ -12,14 +12,22 @@ export const Projects = () => {
   const categories = ["Todos", "Financeira", "Business Intelligence", "Análise Estatística"];
 
   const projects = [
-   
+   {
+    title: "Pipeline de Dados e Análise do Cartola FC",
+    description: "Neste projeto, construí um pipeline de dados 100% automatizado que coleta, armazena e analisa o desempenho histórico de jogadores do Cartola FC. A solução usa Python para extrair e tratar dados da API oficial, Apache Airflow para orquestrar a execução, e Power BI para gerar um dashboard interativo que se atualiza sozinho, auxiliando na tomada de decisão estratégica a cada rodada.",
+    image: "/images/cartola.jpg",
+    category: "Business Intelligence",
+    technologies: ["Python", "Pandas", "SQLite", "Apache Airflow", "Docker", "Power BI", "DAX"],
+    featured: true,
+    liveDemoUrl: "https://app.powerbi.com/reportEmbed?reportId=dd0fba09-4e5c-4103-8bcf-dd41b9f56247&autoAuth=true&ctid=e0c25e82-687a-4766-9df1-04f9ceb6e149"
+  },
+  
     {
       title: "Módulo Produtivo: Dashboard de Análise de Vendas e Gargalos Operacionais para Xperiun Metalúrgica",
       description:"A Xperiun Metalúrgica, uma empresa que fabrica componentes industriais sob medida, enfrentava um cenário de caos operacional com controles manuais e informações fragmentadas. Isso resultava em atrasos, retrabalho, aumento de custos e insatisfação de clientes. O objetivo deste projeto foi transformar esse cenário, implementando uma solução de análise de dados para trazer clareza, identificar gargalos e fundamentar a tomada de decisões com evidências. O projeto incluiu a definição de KPIs estratégicos, como tempo médio por setor e taxa de retrabalho, para monitorar o desempenho da produção. A partir da análise dos dados levantados, foi desenvolvido um dashboard interativo no Power BI, permitindo que a gestão e os times operacionais visualizem o fluxo de produção, identifiquem precisamente onde as engrenagens estão travando e implementem soluções rápidas e eficazes.",
       image: "/images/metalurgica.jpg",
       category: "Business Intelligence",
       technologies: ["Power BI", "Dax", "Modelagem de dados"],
-      featured: true,
       liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiMzU4YWE1OWYtM2RhNC00ODBiLWEzYzktYjhiMmU3MmU5OWI5IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9",
       githubUrl:"https://github.com/renanlima2023/moduloprodutivo-xperiun"
     },
@@ -75,16 +83,7 @@ export const Projects = () => {
       technologies: ["Power BI", "Power Query", "Excel", "DAX"],
       liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiOGZhYzJiZmUtNWFlNC00MmZlLTg1NGYtYzBkOWJhMTkyZTIxIiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"
     },
-    
-    
-    /*
-    {
-      title: "Marketplace de Restaurantes",
-      description: "Neste projeto, busquei avaliar e analisar o desempenho de um marketplace de restaurantes internacional, o Elegant Restaurant.",
-      image: "/lovable-uploads/775d4189-1dc2-4325-8cc2-adb45defb478.png",
-      category: "Análise Estatística",
-      technologies: ["Python", "Pandas", "Matplotlib", "Kaggle"]
-    },
+  /*
     {
       title: "Análise de Chamados de Suporte - LK Consulting",
       description: "Neste projeto, desenvolvi um dashboard no Power BI para analisar o desempenho do atendimento de chamados de suporte da LK Consulting.",

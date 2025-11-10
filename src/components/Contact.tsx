@@ -16,8 +16,8 @@ export const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   
 
-  // Endpoint do Formspree (SUBSTITUA PELO SEU!)
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/myzpjdgb"; // <<< SEU ENDPOINT REAL AQUI
+  
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/myzpjdgb"; 
 
   // Função para lidar com o envio do formulário
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
