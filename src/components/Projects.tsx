@@ -19,12 +19,12 @@ export const Projects = () => {
     category: "Business Intelligence",
     technologies: ["Python", "Pandas", "SQLite", "Apache Airflow", "Docker", "Power BI", "DAX"],
     featured: true,
-    liveDemoUrl: "https://app.powerbi.com/reportEmbed?reportId=dd0fba09-4e5c-4103-8bcf-dd41b9f56247&autoAuth=true&ctid=e0c25e82-687a-4766-9df1-04f9ceb6e149"
+    liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiMDE4OTI1ZDMtZjcxMC00NDI5LTlhMzQtZDY1ZjkwN2VhMGM3IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"
   },
   
     {
       title: "Módulo Produtivo: Dashboard de Análise de Vendas e Gargalos Operacionais para Xperiun Metalúrgica",
-      description:"A Xperiun Metalúrgica, uma empresa que fabrica componentes industriais sob medida, enfrentava um cenário de caos operacional com controles manuais e informações fragmentadas. Isso resultava em atrasos, retrabalho, aumento de custos e insatisfação de clientes. O objetivo deste projeto foi transformar esse cenário, implementando uma solução de análise de dados para trazer clareza, identificar gargalos e fundamentar a tomada de decisões com evidências. O projeto incluiu a definição de KPIs estratégicos, como tempo médio por setor e taxa de retrabalho, para monitorar o desempenho da produção. A partir da análise dos dados levantados, foi desenvolvido um dashboard interativo no Power BI, permitindo que a gestão e os times operacionais visualizem o fluxo de produção, identifiquem precisamente onde as engrenagens estão travando e implementem soluções rápidas e eficazes.",
+      description:"A Xperiun Metalúrgica enfrentava falhas operacionais causadas por controles manuais e informações dispersas, gerando atrasos, retrabalho e aumento de custos. O projeto trouxe uma solução de análise de dados para dar visibilidade ao processo produtivo, definir KPIs estratégicos e apoiar decisões baseadas em evidências. Com a análise dos dados, foi criado um dashboard interativo no Power BI que permite acompanhar o fluxo de produção, identificar gargalos com precisão e implementar melhorias rápidas e eficazes.",
       image: "/images/metalurgica.jpg",
       category: "Business Intelligence",
       technologies: ["Power BI", "Dax", "Modelagem de dados"],
@@ -182,7 +182,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <CardContent className="p-8">
+              <CardContent className="p-8 flex flex-col h-full">
                 <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-400 transition-colors duration-300">
                   {project.title}
                 </h3>
