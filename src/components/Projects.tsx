@@ -19,8 +19,7 @@ export const Projects = () => {
     category: "Business Intelligence",
     technologies: ["Python", "Pandas", "SQLite", "Apache Airflow", "Docker", "Power BI", "DAX"],
     featured: true,
-    liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiMDE4OTI1ZDMtZjcxMC00NDI5LTlhMzQtZDY1ZjkwN2VhMGM3IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9"
-  },
+    liveDemoUrl: "https://app.powerbi.com/view?r=eyJrIjoiMDE4OTI1ZDMtZjcxMC00NDI5LTlhMzQtZDY1ZjkwN2VhMGM3IiwidCI6ImUwYzI1ZTgyLTY4N2EtNDc2Ni05ZGYxLTA0ZjljZWI2ZTE0OSJ9",  },
   
     {
       title: "Módulo Produtivo: Dashboard de Análise de Vendas e Gargalos Operacionais para Xperiun Metalúrgica",
