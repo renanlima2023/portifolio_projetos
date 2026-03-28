@@ -5,16 +5,16 @@ export const Experience = () => {
   const experiences = [
     {
       period: "2025 - Atualmente",
-      company: "Analista de BI Júnior",
+      company: "Analista de BI e Dados",
       role: "CN Data Consultoria",
-      description: "Atuo na transformação de dados em insights estratégicos para tomada de decisão, com foco no desenvolvimento de dashboards (Power BI, Looker Studio), manipulação de dados (SQL, Python) e processos ETL.",
+      description: "Atuo na linha de frente da transformação de dados em inteligência estratégica. Minha missão é converter grandes volumes de informação em decisões de alto impacto, utilizando Power BI, SQL e Python. Com foco em automação e processos de ETL, reduzo em até 30% o tempo gasto em análises manuais, elevando a precisão dos KPIs em 40% através de modelagem robusta e Data Storytelling.",
       side: "right"
     },
     {
       period: "2017 - 2019",
       company: "Supervisor de infraestrutura",
       role: "Universidade Federal de Alagoas",
-      description: "Supervisionei a infraestrutura de TI, liderando equipes e otimizando processos para garantir eficiência operacional e continuidade de serviços. Gerenciei demandas e implementei melhorias estratégicas, desenvolvendo uma forte base analítica para decisões baseadas em dados, o que despertou meu interesse por Business Intelligence.",
+      description: "Como Supervisor de Infraestrutura, fui responsável por garantir a eficiência operacional e a continuidade dos serviços de TI, liderando equipes e otimizando processos. Minha experiência incluiu o gerenciamento de demandas, coordenação de equipes e implementação de melhorias estratégicas, resultando em maior produtividade e redução de falhas. Essa função me proporcionou uma visão abrangente da infraestrutura de TI, fortalecendo minha capacidade de análise e resolução de problemas, habilidades essenciais para minha transição para a área de dados e BI.",
 
       side: "left"
     },
@@ -22,16 +22,16 @@ export const Experience = () => {
       period: "2009 - 2017",
       company: "Analista de Suporte Técnico",
       role: "Universidade Federal de Alagoas",
-      description: "Atuei no suporte técnico e manutenção de sistemas, assegurando a segurança e eficiência operacional. Otimizei softwares e processos, resultando em 20% de redução no tempo de inatividade e aumento da satisfação do usuário. Desenvolvi forte capacidade analítica e de resolução de problemas, essenciais para ambientes orientados a dados.",
+      description: "Atuei na manutenção e suporte técnico, garantindo a segurança e a eficiência operacional dos sistemas da instituição. Trabalhei na configuração e atualização de softwares essenciais, incluindo soluções de segurança, para proteger os sistemas contra vulnerabilidades. Além disso, ofereci suporte remoto e presencial, otimizando a experiência dos usuários e reduzindo o tempo de inatividade.",
       side: "left"
     },
-    {
-      period: "2007 - 2009",
-      company: "Estagiário de Analista de Suporte Técnico",
-      role: "Unsina Coruripe - Alagoas",
-      description: "Prestei suporte técnico de 1º e 2º nível (hardware, software, rede) e realizei manutenção preventiva e corretiva, otimizando a eficiência dos sistemas. Participei da implantação de um sistema de GED, aprimorando habilidades em gestão de informações e resolução de problemas complexos, fundamentais para a análise de dados.",
-      side: "right"
-    }
+{
+  period: "2007 - 2009",
+  company: "Estagiário de Analista de Suporte Técnico",
+  role: "Unsina Coruripe - Alagoas",
+  description: "Prestei suporte técnico de 1º e 2º nível para usuários internos, solucionando demandas de hardware, software, rede e sistemas corporativos. Realizava manutenção preventiva e corretiva em estações de trabalho e equipamentos de TI. Fui responsável pela instalação e configuração de sistemas operacionais, pacote Office, ferramentas corporativas e pelo monitoramento de servidores e rotinas de backup, garantindo a disponibilidade e integridade das informações. Participei da implantação do sistema de GED (Gestão Eletrônica de Documentos), apoiando a configuração da ferramenta, testes, treinamento de usuários e migração de documentos físicos para o ambiente digital. Atuei também na documentação de procedimentos técnicos e no controle de chamados via sistema de help desk. Prestei suporte técnico de 1º e 2º nível (hardware, software, rede) e realizei manutenção preventiva e corretiva, otimizando a eficiência dos sistemas. Participei da implantação de um sistema de GED, aprimorando habilidades em gestão de informações e resolução de problemas complexos, fundamentais para a análise de dados.",
+  side: "right"
+}
   ];
 
   return (

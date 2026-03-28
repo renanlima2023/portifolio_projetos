@@ -49,14 +49,14 @@ export const About = () => {
            className="text-xl text-gray-300 leading-relaxed opacity-0 animate-fade-in-up"
            style={{ animationDelay: `${sectionDelay + 0.3}s` }}
          >
-            Como Analista de BI Jr, minha missão é transformar dados complexos em insights acionáveis que impulsionam o crescimento e a tomada de decisões estratégicas.
+            Analista de BI e Dados com 10 anos de trajetória em TI, especializado em transformar ecossistemas de dados complexos em inteligência estratégica.
           </p>
 
           <p
             className="text-xl text-gray-300 leading-relaxed opacity-0 animate-fade-in-up"
             style={{ animationDelay: `${sectionDelay + 0.6}s` }}
           >
-            Com experiência em projetos focados em inteligência de negócios, desenvolvi e aplico habilidades em visualização de dados e processos de ETL. Meu foco é crescer e inovar, buscando continuamente novas tecnologias e metodologias para entregar soluções de alto valor que geram impacto real nas organizações.
+            Minha expertise une o rigor técnico da infraestrutura e sistemas com a capacidade analítica de extrair valor real para o negócio. Com domínio em SQL, Power BI e processos de ETL, foco na criação de modelos de dados robustos (Star Schema) e dashboards de alto impacto que otimizam a tomada de decisão executiva. Busco constantemente a inovação através de tecnologias como Python e Databricks, entregando soluções que não apenas visualizam dados, mas impulsionam resultados e rentabilidade.
             </p>
 
             {/* Skills Grid */}
@@ -166,7 +166,8 @@ export const About = () => {
                   { name: "Excel", level: 70, color: "from-cyan-400 to-blue-500" },
                   { name: "Estatística", level: 60, color: "from-purple-500 to-pink-600" },
                   { name: "AWS/Azure", level: 65, color: "from-blue-500 to-purple-600" },
-                  {name: "Apache Airflow", level: 60, color: "from-blue-500 to-purple-600" }
+                  {name: "Apache Airflow", level: 60, color: "from-blue-500 to-purple-600" },
+                  {name: "Databricks", level: 50, color: "from-purple-500 to-pink-600" }
 
                 ].map((skill) => (
                   <div key={skill.name} className="group">
@@ -204,6 +205,7 @@ export const About = () => {
               { name: "Seaborn", icon: AreaChart },
               { name: "Scikit-learn", icon: Brain },
               { name: "Apache Airflow", icon: SiApacheairflow },
+              { name: "Databricks", icon: Cpu },
              // { name: "TensorFlow", icon: Cpu }
             ].map((tech) => (
               <div 

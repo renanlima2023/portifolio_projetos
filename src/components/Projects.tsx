@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input";
 export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("Todos");
   const [searchTerm, setSearchTerm] = useState("");
-
   const categories = ["Todos", "Financeira", "Business Intelligence", "Análise Estatística"];
 
   const projects = [
